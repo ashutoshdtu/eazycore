@@ -322,16 +322,7 @@ graph TD
 * Determinism > magic
 * Isolation by default
 * Fail fast, tear down cleanly
-
----
-
-## Roadmap (Non-Binding)
-
-* Cancellation tokens
-* Streaming RPC
-* Capability permissions
-* Observability hooks
-* Plugin hot-reload
+* Excellent DX (developer experience)
 
 ---
 
