@@ -1,0 +1,14 @@
+{
+  "name": "eazycore-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "cp README.md ./packages/eazycore/README.md && cp LICENSE ./packages/eazycore/LICENSE && bun run --filter ./packages/eazycore build",
+    "dev": "bun run --filter ./packages/eazycore dev",
+    "prepublishOnly": "cp README.md ./packages/eazycore/README.md && cp LICENSE ./packages/eazycore/LICENSE && bun run --filter ./packages/eazycore build"
+  }
+}

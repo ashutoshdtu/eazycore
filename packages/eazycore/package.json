@@ -1,0 +1,34 @@
+{
+    "name": "eazycore",
+    "type": "module",
+    "version": "0.1.0",
+    "description": "A simple example library built by tsdown",
+    "exports": {
+        ".": "./dist/index.mjs",
+        "./worker-host": "./dist/worker-host.mjs",
+        "./package.json": "./package.json"
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE",
+        "package.json"
+    ],
+    "scripts": {
+        "build": "tsdown",
+        "dev": "tsdown --watch",
+        "prepublishOnly": "cp ../../README.md ./README.md && cp ../../LICENSE ./LICENSE && bun run build"
+    },
+    "devDependencies": {
+        "@types/node": "^25.2.0",
+        "tsdown": "^0.18.1",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "nanoid": "^5.1.6",
+        "zod": "^4.3.6"
+    }
+}
